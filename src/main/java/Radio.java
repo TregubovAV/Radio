@@ -45,12 +45,12 @@ public class Radio {
 
     public void setStation(int station) {
 
-           if (station > 9) {
-               return;
-           }
-           if (station < 0) {
-               return;
-           }
+        if (station > 9) {
+            return;
+        }
+        if (station < 0) {
+            return;
+        }
         //   if (station < 9) {
         //     station = station + 1;
         // }
@@ -64,12 +64,12 @@ public class Radio {
 
     public void setVolume(int volume) {
 
-            if (volume > 100) {
-               return;
-          }
-          if (volume < 0) {
-              return;
-         }
+        if (volume > 100) {
+            return;
+        }
+        if (volume < 0) {
+            return;
+        }
 
         this.volume = volume;
     }

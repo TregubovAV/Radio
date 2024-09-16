@@ -123,4 +123,13 @@ public class RadioTest {
         int actual = radio.getVolume();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void testDecreaseVolume99() {
+        Radio radio = new Radio();
+        radio.setVolume(99);
+        radio.decrease();
+        int expected = 98;
+        int actual = radio.getVolume();
+        Assertions.assertEquals(expected, actual);
+    }
 }

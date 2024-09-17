@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 public class RadioTest {
 
     @Test
@@ -68,6 +69,18 @@ public class RadioTest {
         int actual = radio.getStation();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void testStationPrevMax1 () {
+        Radio radio = new Radio(20);
+        radio.setStation(19);
+        radio.prev();
+        int expected = 18;
+        int actual = radio.getStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+
+
     @Test
     public void testStationPrevMin () {
         Radio radio = new Radio();
